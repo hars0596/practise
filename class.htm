@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<script type="text/javascript">
+		var states = new Array("Punjab","Harayana","j & k");
+		var cities = {
+			"Punjab":["Amritsar","Ludhiana","Jalandhar"],
+			"Harayana":["Amritsar","Ludhiana","Jalandhar"],
+			"j & k":["Amritsar","Ludhiana","Jalandhar"],
+		};
+		function listCities(obj){
+			alert(obj.value + cities[obj.value]);
+		}
+	</script>
+</head>
+<body onload="init();">
+    <select id = "State" size="1">
+    	<script type="text/javascript">
+    	   for(let i = 0;i<states.length;i++){
+              document.write("<option value ='" +states[i] +"'>"+states[i]+"</option>");
+    	   }	
+    	</script>
+</body>
+</html>
